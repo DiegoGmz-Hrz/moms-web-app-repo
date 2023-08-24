@@ -427,7 +427,7 @@ cursor: pointer;
         font-weight: 300;
         text-align: center;
         width: 50vw;
-        top:-3vh;
+        top:0;
         color: var(--Secondary3);
     }
     #Home_Shop_Directory_Button,#Home_Custome_Design_Directory_Button,#Home_Suport_Directory_Button,#Home_About_Us_Directory_Button{
@@ -447,6 +447,41 @@ cursor: pointer;
         left:0;
         background-color: var(--Secondary3);
         top: 360vh;
+    }
+    #Home_Carousel_Center_image{
+        z-index: 10;
+        position: relative;
+        width: 100vw;
+        height: 50vh;
+        left: 0;
+        background-size: cover;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.368),-5px 5px 4px 4px rgba(0, 0, 0, 0.368),5px -5px 4px 4px rgba(0, 0, 0, 0.368),-5px -5px 4px 4px rgba(0, 0, 0, 0.368);
+    }
+    #Home_Carousel_left_image{
+        display: none;
+    }
+    #Home_Carousel_Right_image{
+        display: none;
+    }
+    #Carousel_Nav_Button_1_Home{
+        position: absolute;
+        left:3.33vw;
+    }
+    #Carousel_Nav_Button_2_Home{
+        position: absolute;
+        left:21.7vw;
+    }
+    #Carousel_Nav_Button_3_Home{
+        position: absolute;
+        left:40vw;
+    }
+    #Carousel_Nav_Button_4_Home{
+        position: absolute;
+        left:58.3vw;
+    }
+    #Carousel_Nav_Button_5_Home{
+        position: absolute;
+        left:76.7vw;
     }
 }
 @media screen and (max-width:600px){
@@ -579,7 +614,7 @@ cursor: pointer;
         font-weight: 300;
         text-align: center;
         width: 50vw;
-        top:-3vh;
+        top:-2vh;
         color: var(--Secondary3);
     }
     #Home_Shop_Directory_Button,#Home_Custome_Design_Directory_Button,#Home_Suport_Directory_Button,#Home_About_Us_Directory_Button{
