@@ -45,13 +45,23 @@ body{
     height: 13vh;
     text-align: center;
 }
-#Sign_up_Log_in{
-    top:.5vh;
+#topRightCorrner{
+    z-index: 101;
     position: absolute;
-    left:85vw;
-    width:15vw;
+    left:70vw;
+    top:3vh;
+    height: 7vh;
+    width: 25vw;
+    /* background-color: rgba(91, 91, 91, 0.415); */
+}
+#Sign_up_Log_in{
+    z-index: 102;
+    position: relative;
+    top:1vh ;
+    left:8vw;
+    width:10vw;
     text-align: center;
-    height: 3vh;
+    height: 4vh;
     font-family: 'Nunito', sans-serif;
     font-size: 1.5vh;
     font-weight: 300;
@@ -60,22 +70,31 @@ body{
 }
 #Sign_up_Log_in:hover{
     color: var(--Secondary1_Lighter);
-    transition: 300ms ease-in-out;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+#Cart svg:hover{
+    cursor: pointer;
 }
 #Cart svg{
-    top:5vh;
-    position: absolute;
-    left:85vw;
+    position: relative;
+    z-index: 102;
+    top: -3.5vh;
+    left: 17.5vw;
+}
+#Hamburger_Menu:hover{
+cursor: pointer;
 }
 #Hamburger_Menu svg{
+    z-index: 103;
     position: absolute;
-    left:93vw;
-    top:4vh;
+    left: 20vw;
+    top:1vh;
 }
 #Hamburger_Menu_tabs div{
-    z-index: 101;
+    z-index: 103;
     position: relative;
-    left:87.5vw;
+    left:15vw;
     width: 10vw;
     height: 5vh;
     border-radius: 2vw;
@@ -83,7 +102,7 @@ body{
     background-color: var(--Secondary1);
 }
 #Hamburger_Menu_tabs div p{
-    z-index: 101;
+    z-index: 103;
     position: relative;
     top:1vh;
     color: var(--Secondary3);
@@ -175,6 +194,9 @@ body{
 #Next_Carousel_Home svg rect,#Last_Carousel_Home svg rect{
     fill: var(--Secondary2);
 }
+#Next_Carousel_Home:hover,#Last_Carousel_Home:hover{
+    cursor: pointer;
+}
 
 /* needs work!!! hover only efects one part of the image
 
@@ -191,6 +213,9 @@ body{
     opacity: 0.8;
     transition: 250ms ease-in-out;
 }
+#Carousel_Nav_Buttons_Home div svg:hover{
+    cursor: pointer;
+}
 .Carousel_Nav_Button_Clicked{
     fill: var(--Secondary1_Lighter);
     opacity: 1;
@@ -199,7 +224,6 @@ body{
 #Carousel_Nav_Button_1_Home svg rect:hover,#Carousel_Nav_Button_2_Home svg rect:hover,#Carousel_Nav_Button_3_Home svg rect:hover,#Carousel_Nav_Button_4_Home svg rect:hover,#Carousel_Nav_Button_5_Home svg rect:hover{
     fill: var(--Secondary1_Lighter);
     opacity: 1;
-    cursor:pointer;
     transition: 250ms ease-in-out;
 }
 #Carousel_Nav_Button_1_Home{
@@ -241,6 +265,9 @@ body{
     width: 30vw;
     top:-3vh;
     color: var(--Secondary3);
+}
+#Home_Shop_Directory_Button:hover,#Home_Custome_Design_Directory_Button:hover,#Home_Suport_Directory_Button:hover,#Home_About_Us_Directory_Button:hover{
+    cursor: pointer;
 }
 #Home_Pages_Directory{
     position: absolute;
@@ -305,10 +332,19 @@ body{
 
 
 @media screen and (min-width: 601px)and (max-width:980px){
-    #Cart svg{
-        top:5vh;
-        position: absolute;
-        left:85vw;
+    #Sign_up_Log_in{
+        z-index: 102;
+        position: relative;
+        top:1.25vh ;
+        left:6vw;
+        width:10vw;
+        text-align: center;
+        height: 4vh;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.25vh;
+        font-weight: 300;
+        color: var(--Secondary1);
+        transition: 500ms ease-in-out;
     }
     #Carousel_Nav_Button_1_Home svg,#Carousel_Nav_Button_2_Home svg,#Carousel_Nav_Button_3_Home svg,#Carousel_Nav_Button_4_Home svg,#Carousel_Nav_Button_5_Home svg{
         width: 10vw;
@@ -333,34 +369,106 @@ body{
         position: absolute;
         left:66vw;
     }
+    #Home_Pages_Directory{
+        position: absolute;
+        z-index: 10;
+        width: 100vw;
+        top:80vh ;
+        height: 290vh;
+        left: 0;
+        border-radius: 5vw;
+        background-color: var(--Secondary1_Lighter);
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+    }
+    #Home_Shop_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 10vh;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+        border-radius: 5vw;
+    }
+    #Home_Custome_Design_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 20vh;
+        border-radius: 5vw;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+    }
+    #Home_Suport_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 30vh;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+        border-radius: 5vw;
+    }
+    #Home_About_Us_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 40vh;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+        border-radius: 5vw;
+    }
+    #Home_Shop_Directory_Button p,#Home_Custome_Design_Directory_Button p,#Home_Suport_Directory_Button p,#Home_About_Us_Directory_Button p{
+        position: absolute;
+        font-family: 'Nunito', sans-serif;
+        font-size: 3vh;
+        font-weight: 300;
+        text-align: center;
+        width: 50vw;
+        top:-3vh;
+        color: var(--Secondary3);
+    }
+    #Home_Shop_Directory_Button,#Home_Custome_Design_Directory_Button,#Home_Suport_Directory_Button,#Home_About_Us_Directory_Button{
+        position: relative;
+        background-color: var(--Primary);
+        width: 50vw;
+        left:10vw;
+        height: 10vh;
+        top: 40vh;
+        border-radius: 5vw;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+    }
+    #footer{
+        position: absolute;
+        width: 100vw;
+        height: 70vh;
+        left:0;
+        background-color: var(--Secondary3);
+        top: 360vh;
+    }
 }
 @media screen and (max-width:600px){
     #Sign_up_Log_in{
-        top:.5vh;
-        position: absolute;
-        left:80vw;
-        width:20vw;
+        z-index: 102;
+        position: relative;
+        top:1.5vh ;
+        left:6vw;
+        width:10vw;
         text-align: center;
-        height: 3vh;
+        height: 4vh;
         font-family: 'Nunito', sans-serif;
-        font-size: 1.25vh;
+        font-size: 1vh;
         font-weight: 300;
         color: var(--Secondary1);
         transition: 500ms ease-in-out;
     }
     #Cart svg{
-        top:4.75vh;
-        position: absolute;
-        left:85vw;
-        width: 4.5vw;
-        height: 4.5vh;
-    }
-    #Hamburger_Menu svg{
-        position: absolute;
-        left:90vw;
-        top:2vh;
-        width: 10vw;
-        height: 10vh;
+        position: relative;
+        z-index: 102;
+        top: -3vh;
+        left: 17.5vw;
     }
     #TopText_Header{
         position: absolute;
@@ -412,5 +520,84 @@ body{
     #Carousel_Nav_Button_5_Home{
         position: absolute;
         left:76.7vw;
+    }
+    #Home_Pages_Directory{
+        position: absolute;
+        z-index: 10;
+        width: 100vw;
+        top:80vh ;
+        height: 290vh;
+        left: 0;
+        border-radius: 5vw;
+        background-color: var(--Secondary1_Lighter);
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+    }
+    #Home_Shop_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 10vh;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+        border-radius: 5vw;
+    }
+    #Home_Custome_Design_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 20vh;
+        border-radius: 5vw;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+    }
+    #Home_Suport_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 30vh;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+        border-radius: 5vw;
+    }
+    #Home_About_Us_Directory{
+        position: relative;
+        background-color: aliceblue;
+        width: 70vw;
+        height: 60vh;
+        left: 15vw;
+        top: 40vh;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+        border-radius: 5vw;
+    }
+    #Home_Shop_Directory_Button p,#Home_Custome_Design_Directory_Button p,#Home_Suport_Directory_Button p,#Home_About_Us_Directory_Button p{
+        position: absolute;
+        font-family: 'Nunito', sans-serif;
+        font-size: 3vh;
+        font-weight: 300;
+        text-align: center;
+        width: 50vw;
+        top:-3vh;
+        color: var(--Secondary3);
+    }
+    #Home_Shop_Directory_Button,#Home_Custome_Design_Directory_Button,#Home_Suport_Directory_Button,#Home_About_Us_Directory_Button{
+        position: relative;
+        background-color: var(--Primary);
+        width: 50vw;
+        left:10vw;
+        height: 10vh;
+        top: 40vh;
+        border-radius: 5vw;
+        box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.126),-5px 5px 4px 4px rgba(0, 0, 0, 0.126),5px -5px 4px 4px rgba(0, 0, 0, 0.126),-5px -5px 4px 4px rgba(0, 0, 0, 0.126);
+    }
+    #footer{
+        position: absolute;
+        width: 100vw;
+        height: 70vh;
+        left:0;
+        background-color: var(--Secondary3);
+        top: 360vh;
     }
 }
