@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;0,800;1,900&display=swap" rel="stylesheet">
+      <script src="Code.js"></script>
+    </head>
+    <body>
+        <div id="Header">
+            <div id="logo_Header">  
+            </div>
+            <div id="TopText_Header" class="Text_Heading">
+                <p>Welcome</p>
+            </div>
+            <div id="Sign_up_Log_in" >
+                <p>Sign Up / Log In</p>
+            </div>
+            <div id="Cart" >
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="3vw" height="3vh" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3H3.21922L6.78345 17.2569C5.73276 17.7236 5 18.7762 5 20C5 21.6569 6.34315 23 8 23C9.65685 23 11 21.6569 11 20C11 19.6494 10.9398 19.3128 10.8293 19H15.1707C15.0602 19.3128 15 19.6494 15 20C15 21.6569 16.3431 23 18 23C19.6569 23 21 21.6569 21 20C21 18.3431 19.6569 17 18 17H8.78078L8.28078 15H18C20.0642 15 21.3019 13.6959 21.9887 12.2559C22.6599 10.8487 22.8935 9.16692 22.975 7.94368C23.0884 6.24014 21.6803 5 20.1211 5H5.78078L5.15951 2.51493C4.93692 1.62459 4.13696 1 3.21922 1H2ZM18 13H7.78078L6.28078 7H20.1211C20.6742 7 21.0063 7.40675 20.9794 7.81078C20.9034 8.9522 20.6906 10.3318 20.1836 11.3949C19.6922 12.4251 19.0201 13 18 13ZM18 20.9938C17.4511 20.9938 17.0062 20.5489 17.0062 20C17.0062 19.4511 17.4511 19.0062 18 19.0062C18.5489 19.0062 18.9938 19.4511 18.9938 20C18.9938 20.5489 18.5489 20.9938 18 20.9938ZM7.00617 20C7.00617 20.5489 7.45112 20.9938 8 20.9938C8.54888 20.9938 8.99383 20.5489 8.99383 20C8.99383 19.4511 8.54888 19.0062 8 19.0062C7.45112 19.0062 7.00617 19.4511 7.00617 20Z" fill="#0F0F0F"/>
+                </svg>
+            </div>
+            <div id="Hamburger_Menu">
+                <svg  onclick="togle_hamburger_menu()" width="5vw" height="5vh" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="23" y="37" width="83" height="9" rx="4.5" fill="#1E1E1E"/>
+                    <rect x="23" y="60" width="83" height="9" rx="4.5" fill="#1E1E1E"/>
+                    <rect x="23" y="83" width="83" height="9" rx="4.5" fill="#1E1E1E"/>
+                </svg> 
+                <div id="Hamburger_Menu_tabs" class="Hiden">
+                    <div id="Hamburger_Menu_Tab_Home" onclick="PageChange(0)"><p>Home</p></div>
+                    <div id="Hamburger_Menu_Tab_Shop"onclick="PageChange(1)"><p>Shop</p></div>
+                    <div id="Hamburger_Menu_Tab_Custome_Design"onclick="PageChange(2)"><p>Custome Design</p></div>
+                    <div id="Hamburger_Menu_Tab_Contact_Us"onclick="PageChange(3)"><p>Contact Us</p></div>
+                    <div id="Hamburger_Menu_Tab_About_us"onclick="PageChange(4)"><p>About Us</p></div>
+                </div>                   
+            </div>
+        </div>
+        <div Id="Main_Body_Home">
+            <div id="Home_Caruosel">
+                <div id="Home_Caruosel_Background"></div>
+                <div id="Home_Carousel_images">
+                    <div id="Home_Carousel_left" class="Home_Carousel">
+                        <div id="Home_Carousel_left_image" class="Home_Carousel_image1"></div>
+                    </div>
+                    <div id="Home_Carousel_Center" class="Home_Carousel">
+                        <div id="Home_Carousel_Center_image" class="Home_Carousel_image2"></div>
+                    </div>
+                    <div id="Home_Carousel_Right" class="Home_Carousel">
+                        <div id="Home_Carousel_Right_image" class="Home_Carousel_image3"></div>
+                    </div>
+                </div>
+                <div id="Home_Caruosel_Buttons">
+                    <div id="Last/Next_Carousel_Home">
+                        <div id="Last_Carousel_Home">
+                            <svg width="5vw" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="LastCaruoselIndex()">
+                                <rect x="37.364" y="58" width="83" height="9" rx="4.5" transform="rotate(45 37.364 58)" fill="#FFF6DC"/>
+                                <rect x="31" y="63.6899" width="83" height="9" rx="4.5" transform="rotate(-45 31 63.6899)" fill="#FFF6DC"/>
+                            </svg>                                
+                        </div>
+                        <div id="Next_Carousel_Home">
+                            <svg width="5vw" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="NextCaruoselIndex()">
+                                <rect x="37.364" y="5" width="83" height="9" rx="4.5" transform="rotate(45 37.364 5)" fill="#FFF6DC"/>
+                                <rect x="31.0269" y="116.717" width="83" height="9" rx="4.5" transform="rotate(-45 31.0269 116.717)" fill="#FFF6DC"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div id="Carousel_Nav_Buttons_Home">
+                        <div id="Carousel_Nav_Button_1_Home" onclick="NavCaruoselClicked(1)">
+                            <svg width="15vw" height="15vh" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="Carousel_Nav_Button_Clicked" id="Carousel_Nav_Button_1_Home_svg" x="14" y="52" width="100" height="24" rx="12" fill="#1E1E1E"/>
+                            </svg>                                
+                        </div>
+                        <div id="Carousel_Nav_Button_2_Home"onclick="NavCaruoselClicked(2)">
+                            <svg width="15vw" height="15vh" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="Carousel_Nav_Button_2_Home_svg"  x="14" y="52" width="100" height="24" rx="12" fill="#1E1E1E"/>
+                            </svg>
+                        </div>
+                        <div id="Carousel_Nav_Button_3_Home"onclick="NavCaruoselClicked(3)">
+                            <svg width="15vw" height="15vh" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="Carousel_Nav_Button_3_Home_svg" x="14" y="52" width="100" height="24" rx="12" fill="#1E1E1E"/>
+                            </svg>
+                        </div>
+                        <div id="Carousel_Nav_Button_4_Home"onclick="NavCaruoselClicked(4)">
+                            <svg width="15vw" height="15vh" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="Carousel_Nav_Button_4_Home_svg" x="14" y="52" width="100" height="24" rx="12" fill="#1E1E1E"/>
+                            </svg>
+                        </div>
+                        <div id="Carousel_Nav_Button_5_Home"onclick="NavCaruoselClicked(5)">
+                            <svg width="15vw" height="15vh" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="Carousel_Nav_Button_5_Home_svg" x="14" y="52" width="100" height="24" rx="12" fill="#1E1E1E"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Home_Pages_Directory">
+                <div id="Home_Shop_Directory">
+                    <div id="Home_Shop_Directory_Image">
+                    </div>
+                    <div id="Home_Shop_Directory_Button" onclick="PageChange(1)"><p>Shop</p>
+                    </div>
+                </div>
+                <div id="Home_Custome_Design_Directory">
+                    <div id="Home_Custome_Design_Directory_Image">
+                    </div>
+                    <div id="Home_Custome_Design_Directory_Button"onclick="PageChange(2)"><p>Custome Designs</p>
+                    </div>
+                </div>
+                <div id="Home_Suport_Directory">
+                    <div id="Home_Suport_Directory_Image">
+                    </div>
+                    <div id="Home_Suport_Directory_Button"onclick="PageChange(3)"><p>Suport</p>
+                    </div>
+                </div>
+                <div id="Home_About_Us_Directory">
+                    <div id="Home_About_Us_Directory_Image">
+                    </div>
+                    <div id="Home_About_Us_Directory_Button" onclick="PageChange(4)"><p>About Us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Shop_Main_Page" class="Hiden">
+
+        </div>
+        <div id="Custome_Design_Page" class="Hiden">
+
+        </div>
+        <div id="Contact_page" class="Hiden">
+
+        </div>
+        <div id="About_us_Page" class="Hiden">
+
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>
