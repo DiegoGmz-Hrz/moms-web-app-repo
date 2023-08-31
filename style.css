@@ -94,8 +94,8 @@ cursor: pointer;
 #Hamburger_Menu_tabs div{
     z-index: 103;
     position: relative;
-    left:15vw;
-    width: 10vw;
+    left:5vw;
+    width: 20vw;
     height: 5vh;
     border-radius: 2vw;
     border-color: black;

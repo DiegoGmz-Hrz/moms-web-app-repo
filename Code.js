@@ -76,27 +76,27 @@ function PageChange(PageNumber){
         case 0:
             PageChange_remove_classes();
             document.getElementById("Main_Body_Home").classList.remove("Hiden");
-            document.getElementById("TopText_Header").children.textContent("Welcome");
+            document.getElementById("TopText_Header_text").textContent="Welcome";
             break;
         case 1:     
             PageChange_remove_classes();
             document.getElementById("Shop_Main_Page").classList.remove("Hiden");
-            document.getElementById("TopText_Header").children.textContent("Shop");
+            document.getElementById("TopText_Header_text").textContent="Shop";
             break;
         case 2:
             PageChange_remove_classes();
             document.getElementById("Custome_Design_Page").classList.remove("Hiden");
-            document.getElementById("TopText_Header").children.textContent("Custome Desings");
+            document.getElementById("TopText_Header_text").textContent="Custom Desings";
             break;
         case 3:
             PageChange_remove_classes();
             document.getElementById("Contact_page").classList.remove("Hiden");
-            document.getElementById("TopText_Header").children.textContent("Suport");
+            document.getElementById("TopText_Header_text").textContent="Suport";
             break;
         case 4:
             PageChange_remove_classes();
             document.getElementById("About_us_Page").classList.remove("Hiden");
-            document.getElementById("TopText_Header").children.textContent("About Us");
+            document.getElementById("TopText_Header_text").textContent="About Us";
             break;
     }
 }
